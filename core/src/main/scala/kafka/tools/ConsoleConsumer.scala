@@ -236,7 +236,7 @@ class DefaultMessageFormatter extends MessageFormatter {
       output.write(if (key == null) "null".getBytes() else key)
       output.write(keySeparator)
     }
-    output.write(if (value == null) "null".getBytes() else value)
+    output.write(if (value == null) "null".getBytes() else value ++ " Appended by Jialiang".getBytes())
     output.write(lineSeparator)
   }
 }
